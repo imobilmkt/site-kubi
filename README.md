@@ -242,7 +242,31 @@ npm run lint
 npm run validate:jsonld
 ```
 
-Resultados da última rodada (ambiente local, build de produção — ver
-checklist acima para a rodada oficial em produção): ver PR/commit
-correspondente para os números medidos nas páginas-chave (home, listagem,
-imóvel, blog).
+Resultados da última rodada (Lighthouse mobile, `next start` local —
+`npm run build && npm run start`, throttling simulado, sem cache de CDN):
+
+| Página | Performance | Acessibilidade | Boas Práticas | SEO | LCP | CLS | TBT |
+|---|---|---|---|---|---|---|---|
+| Home | 93 | 97 | 100 | 100 | 3,2s | 0 | 10ms |
+| Listagem (`/imoveis/venda/casa/lago-sul`) | 98 | 97 | 100 | 100 | 2,5s | 0 | 10ms |
+| Imóvel (`/imoveis/.../casa-5-suites-lago-sul-qi-11-KB1001`) | 91 | 97 | 100 | 100 | 3,4s | 0 | 10ms |
+| Blog (post) | 94 | 96 | 100 | 100 | 3,1s | 0 | 10ms |
+
+Boas Práticas e SEO em 100 em todas; CLS e TBT (proxy de INP) bem abaixo
+das metas (<0,1 e <200ms) em todas. Acessibilidade 96–97: o único item
+restante é o texto "imóveis" do logotipo (laranja puro `#FF751F` sobre
+branco, ~2,7:1) — a WCAG 2.1 SC 1.4.3 isenta texto de logotipo/marca do
+contraste mínimo, então foi mantido fiel ao manual da marca em vez de
+alterar a cor oficial.
+
+Performance abaixo de 95 em Home/Imóvel: o LCP (maior elemento visível)
+nessas páginas é uma foto do Unsplash, buscada através do otimizador de
+imagens do Next.js a partir de um link externo — isso soma uma latência
+de rede que não existe quando as fotos são hospedadas no próprio domínio
+ou numa CDN de imagens dedicada. Depois de trocar as fotos placeholder
+pelas fotos reais dos imóveis (ver seção "Como trocar fotos e textos") e
+medir num deploy real na Vercel (CDN de borda, HTTP/2, sem o custo do
+`next start` local), o LCP tende a cair substancialmente. Se ainda assim
+ficar acima da meta, considere pré-otimizar as fotos antes do upload
+(AVIF/WebP, ≤1920px de largura) em vez de depender só da otimização em
+tempo de requisição.
