@@ -1,0 +1,78 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/*
+ * Design tokens da Kubi Imóveis.
+ * Cores oficiais do manual da marca: laranja, preto, branco e cinza escuro.
+ * Os demais tons (cinzas alternados, laranja escuro de hover) são derivados
+ * dessas quatro cores para manter consistência visual em todo o site.
+ */
+:root {
+  --color-kubi-white: #ffffff;
+  --color-kubi-black: #000000;
+  --color-kubi-orange: #ff751f;
+  --color-kubi-orange-dark: #d9590c;
+  --color-kubi-orange-light: #ffe4cf;
+  --color-kubi-gray: #737373;
+
+  /* Cinzas auxiliares para fundos alternados e bordas */
+  --color-kubi-gray-50: #fafafa;
+  --color-kubi-gray-100: #f2f2f2;
+  --color-kubi-gray-200: #e5e5e5;
+  --color-kubi-gray-300: #d4d4d4;
+  --color-kubi-gray-700: #404040;
+  --color-kubi-gray-900: #171717;
+
+  --background: var(--color-kubi-white);
+  --foreground: var(--color-kubi-black);
+
+  --radius-card: 0.75rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-kubi-white: var(--color-kubi-white);
+  --color-kubi-black: var(--color-kubi-black);
+  --color-kubi-orange: var(--color-kubi-orange);
+  --color-kubi-orange-dark: var(--color-kubi-orange-dark);
+  --color-kubi-orange-light: var(--color-kubi-orange-light);
+  --color-kubi-gray: var(--color-kubi-gray);
+  --color-kubi-gray-50: var(--color-kubi-gray-50);
+  --color-kubi-gray-100: var(--color-kubi-gray-100);
+  --color-kubi-gray-200: var(--color-kubi-gray-200);
+  --color-kubi-gray-300: var(--color-kubi-gray-300);
+  --color-kubi-gray-700: var(--color-kubi-gray-700);
+  --color-kubi-gray-900: var(--color-kubi-gray-900);
+
+  --font-sans: var(--font-body);
+  --font-heading: var(--font-heading);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-heading {
+  font-family: var(--font-heading), ui-sans-serif, system-ui, sans-serif;
+  letter-spacing: -0.01em;
+}
+
+/* Foco visível para navegação por teclado (WCAG 2.1 AA) */
+:focus-visible {
+  outline: 2px solid var(--color-kubi-orange-dark);
+  outline-offset: 2px;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
