@@ -692,7 +692,7 @@ export const mockProperties: Property[] = [
     },
     coordinates: { lat: -15.7289, lng: -47.8605 },
     photos: [
-      photo("1600566752734-2a0cd584b791", "Casa vendida no Lago Norte", true),
+      photo("1512917774080-9991f1c4c750", "Casa vendida no Lago Norte", true),
     ],
     agent: agents.cleia,
     createdAt: "2025-10-02T10:00:00-03:00",
@@ -808,7 +808,7 @@ export const mockProperties: Property[] = [
     },
     coordinates: { lat: -15.8651, lng: -47.7978 },
     photos: [
-      photo("1600585153985-4b7b6c4d9f5e", "Casa à venda ou locação no Jardim Botânico", true),
+      photo("1600047509807-ba8f99d2cdde", "Casa à venda ou locação no Jardim Botânico", true),
     ],
     agent: agents.cleia,
     createdAt: "2026-02-25T10:00:00-03:00",
