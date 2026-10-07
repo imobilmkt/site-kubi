@@ -50,7 +50,7 @@ export function ConsentBanner() {
           <button
             type="button"
             onClick={() => handle("accept-all")}
-            className="rounded-full bg-kubi-orange px-4 py-2 text-sm font-semibold text-kubi-white transition-colors hover:bg-kubi-orange-dark"
+            className="rounded-full bg-kubi-orange px-4 py-2 text-sm font-semibold text-kubi-black transition-colors hover:bg-kubi-orange-dark hover:text-kubi-white"
           >
             Aceitar todos
           </button>

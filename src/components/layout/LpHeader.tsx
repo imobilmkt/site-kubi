@@ -7,7 +7,7 @@ export function LpHeader() {
   return (
     <header className="border-b border-kubi-gray-200 py-4">
       <Container className="flex justify-center sm:justify-start">
-        <Link href="/" aria-label="Kubi Imóveis — página inicial">
+        <Link href="/">
           <Logo layout="horizontal" tone="dark" />
         </Link>
       </Container>

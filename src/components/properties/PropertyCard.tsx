@@ -41,7 +41,7 @@ export function PropertyCard({ property }: { property: Property }) {
           </span>
         )}
         {property.featured && !statusLabel && (
-          <span className="absolute left-3 top-3 rounded-full bg-kubi-orange px-3 py-1 text-xs font-semibold text-kubi-white">
+          <span className="absolute left-3 top-3 rounded-full bg-kubi-orange px-3 py-1 text-xs font-semibold text-kubi-black">
             Destaque
           </span>
         )}

@@ -28,7 +28,7 @@ export function StickyMobileCta({ propertyCode, title }: { propertyCode: string;
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackWhatsappClick(propertyCode, "property_sticky_cta")}
-        className="flex flex-1 items-center justify-center gap-1.5 bg-kubi-orange py-3.5 text-sm font-semibold text-kubi-white"
+        className="flex flex-1 items-center justify-center gap-1.5 bg-kubi-orange py-3.5 text-sm font-semibold text-kubi-black"
       >
         WhatsApp
       </a>

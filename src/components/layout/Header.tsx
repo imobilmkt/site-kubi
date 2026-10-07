@@ -19,7 +19,7 @@ export function Header() {
   return (
     <header className="sticky top-0 z-30 border-b border-kubi-gray-200 bg-kubi-white/95 backdrop-blur">
       <Container className="flex h-16 items-center justify-between sm:h-20">
-        <Link href="/" aria-label={`${siteConfig.name} — página inicial`}>
+        <Link href="/">
           <Logo layout="horizontal" tone="dark" />
         </Link>
 
@@ -83,7 +83,7 @@ export function Header() {
             target="_blank"
             rel="noopener noreferrer"
             onClick={() => trackWhatsappClick(undefined, "header")}
-            className="hidden rounded-full bg-kubi-orange px-5 py-2.5 text-sm font-semibold text-kubi-white transition-colors hover:bg-kubi-orange-dark sm:inline-block"
+            className="hidden rounded-full bg-kubi-orange px-5 py-2.5 text-sm font-semibold text-kubi-black transition-colors hover:bg-kubi-orange-dark hover:text-kubi-white sm:inline-block"
           >
             Falar no WhatsApp
           </a>
@@ -126,7 +126,7 @@ export function Header() {
               target="_blank"
               rel="noopener noreferrer"
               onClick={() => trackWhatsappClick(undefined, "header_mobile")}
-              className="mt-2 rounded-full bg-kubi-orange px-5 py-3 text-center text-sm font-semibold text-kubi-white"
+              className="mt-2 rounded-full bg-kubi-orange px-5 py-3 text-center text-sm font-semibold text-kubi-black"
             >
               Falar no WhatsApp
             </a>

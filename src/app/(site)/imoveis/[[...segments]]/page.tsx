@@ -95,6 +95,7 @@ export default async function ImoveisPage(props: PageProps) {
           <FilterBar filters={filters} />
         </div>
 
+        <h2 className="sr-only">Resultados</h2>
         <p className="mt-6 text-sm text-kubi-gray">
           {result.total} {result.total === 1 ? "imóvel encontrado" : "imóveis encontrados"}
         </p>

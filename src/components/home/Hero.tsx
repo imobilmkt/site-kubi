@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section className="relative flex min-h-[640px] items-center overflow-hidden bg-kubi-black">
       <Image
-        src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=2400&q=80"
+        src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=1920&q=70"
         alt="Residência de alto padrão em Brasília, com arquitetura moderna e área de piscina"
         fill
         priority

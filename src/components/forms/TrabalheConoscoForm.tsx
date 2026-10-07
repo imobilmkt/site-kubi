@@ -82,7 +82,7 @@ export function TrabalheConoscoForm() {
       <button
         type="submit"
         disabled={isSubmitting}
-        className="w-full rounded-full bg-kubi-orange px-6 py-3 text-sm font-semibold text-kubi-white transition-colors hover:bg-kubi-orange-dark disabled:opacity-60"
+        className="w-full rounded-full bg-kubi-orange px-6 py-3 text-sm font-semibold text-kubi-black transition-colors hover:bg-kubi-orange-dark hover:text-kubi-white disabled:opacity-60"
       >
         {isSubmitting ? "Enviando..." : "Quero fazer parte da Kubi"}
       </button>

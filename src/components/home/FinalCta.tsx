@@ -20,7 +20,7 @@ export function FinalCta() {
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="rounded-full bg-kubi-orange px-8 py-3.5 text-sm font-semibold text-kubi-white transition-colors hover:bg-kubi-orange-dark"
+          className="rounded-full bg-kubi-orange px-8 py-3.5 text-sm font-semibold text-kubi-black transition-colors hover:bg-kubi-orange-dark hover:text-kubi-white"
         >
           Falar no WhatsApp
         </a>

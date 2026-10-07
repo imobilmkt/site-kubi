@@ -53,10 +53,14 @@ export function PropertyMap({
       for (const property of withCoords) {
         const marker = L.marker([property.coordinates!.lat, property.coordinates!.lng], {
           icon: markerIcon,
+          alt: property.title,
         }).addTo(map);
         marker.bindPopup(
           `<a href="${getPropertyUrl(property)}" style="font-weight:600;color:#000">${property.title}</a><br/>${getDisplayPrice(property)}`,
         );
+        // Leaflet marca o ícone com role="button"/tabindex para navegação por
+        // teclado, mas não define um nome acessível sozinho — completamos aqui.
+        marker.getElement()?.setAttribute("aria-label", `Ver imóvel: ${property.title}`);
       }
 
       if (withCoords.length > 1) {

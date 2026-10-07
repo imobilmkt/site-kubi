@@ -109,7 +109,7 @@ export default async function BairroPage(props: PageProps) {
               </p>
               <Link
                 href="/contato"
-                className="mt-4 inline-block rounded-full bg-kubi-orange px-5 py-2.5 text-sm font-semibold text-kubi-white hover:bg-kubi-orange-dark"
+                className="mt-4 inline-block rounded-full bg-kubi-orange px-5 py-2.5 text-sm font-semibold text-kubi-black transition-colors hover:bg-kubi-orange-dark hover:text-kubi-white"
               >
                 Falar com a Kubi
               </Link>

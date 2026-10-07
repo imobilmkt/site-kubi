@@ -15,7 +15,7 @@ export function PropertyCtaButtons({ code, title }: { code: string; title: strin
         target="_blank"
         rel="noopener noreferrer"
         onClick={() => trackWhatsappClick(code, "property_sidebar")}
-        className="rounded-full bg-kubi-orange px-5 py-3 text-center text-sm font-semibold text-kubi-white transition-colors hover:bg-kubi-orange-dark"
+        className="rounded-full bg-kubi-orange px-5 py-3 text-center text-sm font-semibold text-kubi-black transition-colors hover:bg-kubi-orange-dark hover:text-kubi-white"
       >
         Falar no WhatsApp
       </a>

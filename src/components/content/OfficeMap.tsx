@@ -31,10 +31,11 @@ export function OfficeMap() {
         iconAnchor: [9, 9],
       });
 
-      L.marker(center, { icon })
+      const marker = L.marker(center, { icon, alt: siteConfig.name })
         .addTo(map)
         .bindPopup(`<strong>${siteConfig.name}</strong><br/>${siteConfig.address.full}`)
         .openPopup();
+      marker.getElement()?.setAttribute("aria-label", `${siteConfig.name} — ${siteConfig.address.full}`);
     })();
 
     return () => {
