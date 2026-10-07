@@ -1,12 +1,13 @@
 {
-  "name": "kubi-scaffold",
+  "name": "kubi-imoveis",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "validate:jsonld": "tsx scripts/validate-jsonld.ts"
   },
   "dependencies": {
     "@hookform/resolvers": "^5.9.1",
@@ -31,6 +32,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.4.0",
     "tailwindcss": "^4",
+    "tsx": "^4.23.15",
     "typescript": "^5"
   }
 }
