@@ -24,7 +24,7 @@ function TeamCard({ member }: { member: TeamMember }) {
       </div>
       <h3 className="mt-4 font-heading font-semibold text-kubi-black">{member.name}</h3>
       <p className="text-sm text-kubi-gray">{member.role}</p>
-      <p className="mt-2 text-xs text-kubi-gray-300">{member.creci}</p>
+      <p className="mt-2 text-xs text-kubi-gray">{member.creci}</p>
       <p className="mt-3 text-sm text-kubi-black/80">{member.bio}</p>
       <a
         href={whatsappHref}

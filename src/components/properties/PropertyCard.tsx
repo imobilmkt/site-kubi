@@ -77,7 +77,7 @@ export function PropertyCard({ property }: { property: Property }) {
           )}
         </dl>
 
-        <p className="mt-3 text-xs text-kubi-gray-300">Ref. {property.code}</p>
+        <p className="mt-3 text-xs text-kubi-gray">Ref. {property.code}</p>
       </div>
     </Link>
   );

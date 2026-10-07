@@ -11,7 +11,11 @@
   --color-kubi-white: #ffffff;
   --color-kubi-black: #000000;
   --color-kubi-orange: #ff751f;
-  --color-kubi-orange-dark: #d9590c;
+  /* ~5:1 de contraste sobre branco (WCAG AA para texto normal). O laranja
+     puro da marca (#FF751F) fica em ~2,9:1 sobre branco e falha AA para
+     texto pequeno — use esta variante em links/texto e reserve o laranja
+     puro para fundos de CTA, ícones ou texto grande (>=18,66px em negrito). */
+  --color-kubi-orange-dark: #b8500c;
   --color-kubi-orange-light: #ffe4cf;
   --color-kubi-gray: #737373;
 

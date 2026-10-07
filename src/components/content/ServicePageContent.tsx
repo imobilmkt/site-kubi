@@ -28,7 +28,7 @@ export function ServicePageContent({ def }: { def: ServicePageDef }) {
 
         <div className="mt-6 grid gap-12 lg:grid-cols-3">
           <div className="lg:col-span-2">
-            <p className="font-heading text-sm font-semibold uppercase tracking-[0.2em] text-kubi-orange">
+            <p className="font-heading text-sm font-semibold uppercase tracking-[0.2em] text-kubi-orange-dark">
               {def.eyebrow}
             </p>
             <h1 className="mt-2 font-heading text-3xl font-semibold text-kubi-black sm:text-4xl">

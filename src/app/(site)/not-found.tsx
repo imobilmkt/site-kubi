@@ -7,7 +7,7 @@ export default function NotFound() {
   return (
     <main className="py-16">
       <Container className="text-center">
-        <p className="font-heading text-sm font-semibold uppercase tracking-[0.2em] text-kubi-orange">
+        <p className="font-heading text-sm font-semibold uppercase tracking-[0.2em] text-kubi-orange-dark">
           Erro 404
         </p>
         <h1 className="mt-3 font-heading text-3xl font-semibold text-kubi-black sm:text-4xl">

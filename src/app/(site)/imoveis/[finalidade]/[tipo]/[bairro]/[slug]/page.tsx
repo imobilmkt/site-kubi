@@ -75,7 +75,6 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
   const params = await props.params;
   const { property } = await resolveProperty(params);
   const canonical = getPropertyUrl(property, params.finalidade as RoutablePurpose);
-  const cover = property.photos.find((p) => p.isCover) ?? property.photos[0];
   const unavailable = property.status === "vendido" || property.status === "alugado";
 
   return {
@@ -83,10 +82,11 @@ export async function generateMetadata(props: PageProps): Promise<Metadata> {
     description: property.description.slice(0, 155),
     alternates: { canonical },
     robots: unavailable ? { index: false, follow: true } : undefined,
+    // A imagem de Open Graph é gerada dinamicamente por opengraph-image.tsx
+    // (foto de capa + título + preço + marca), não precisa ser repetida aqui.
     openGraph: {
       title: property.title,
       description: property.description.slice(0, 155),
-      images: cover ? [{ url: cover.url }] : undefined,
     },
   };
 }
