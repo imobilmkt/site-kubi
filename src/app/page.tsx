@@ -1,12 +1,23 @@
-import { siteConfig } from "@/config/site";
+import { Hero } from "@/components/home/Hero";
+import { FeaturedProperties } from "@/components/home/FeaturedProperties";
+import { NeighborhoodShowcase } from "@/components/home/NeighborhoodShowcase";
+import { ServicesGrid } from "@/components/home/ServicesGrid";
+import { SssSection } from "@/components/home/SssSection";
+import { StatsSection } from "@/components/home/StatsSection";
+import { TestimonialsSection } from "@/components/home/TestimonialsSection";
+import { FinalCta } from "@/components/home/FinalCta";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center gap-4 px-6 py-24 text-center">
-      <h1 className="font-heading text-3xl font-semibold text-kubi-black sm:text-4xl">
-        {siteConfig.slogan}
-      </h1>
-      <p className="max-w-xl text-kubi-gray">{siteConfig.description}</p>
+    <main>
+      <Hero />
+      <StatsSection />
+      <FeaturedProperties />
+      <NeighborhoodShowcase />
+      <ServicesGrid />
+      <SssSection />
+      <TestimonialsSection />
+      <FinalCta />
     </main>
   );
 }
