@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { fontVariables } from "@/lib/fonts";
 import { siteConfig } from "@/config/site";
-import { Header } from "@/components/layout/Header";
-import { Footer } from "@/components/layout/Footer";
 import { WhatsappFloatingButton } from "@/components/layout/WhatsappFloatingButton";
 import { ConsentInit } from "@/components/analytics/ConsentInit";
 import { ConsentBanner } from "@/components/analytics/ConsentBanner";
@@ -33,6 +31,12 @@ export const metadata: Metadata = {
   },
 };
 
+/**
+ * Layout raiz: só o essencial comum a TODO o site, inclusive as landing
+ * pages de Ads (/lp/*), que têm seu próprio layout sem o header/footer
+ * completos (ver src/app/lp/layout.tsx) — mas continuam precisando de
+ * consentimento, analytics e botão de WhatsApp.
+ */
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html lang="pt-BR" className={`${fontVariables} h-full antialiased`}>
@@ -42,9 +46,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       <body className="flex min-h-full flex-col bg-kubi-white text-kubi-black">
         <ConsentInit />
         <GoogleTagManager />
-        <Header />
-        <div className="flex-1">{children}</div>
-        <Footer />
+        <div className="flex-1 flex flex-col">{children}</div>
         <WhatsappFloatingButton />
         <ConsentBanner />
       </body>
