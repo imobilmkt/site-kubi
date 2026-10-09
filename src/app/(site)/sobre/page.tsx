@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { siteConfig } from "@/config/site";
@@ -107,18 +108,27 @@ export default function SobrePage() {
           </p>
         </section>
 
-        <section className="mt-12">
-          <h2 className="font-heading text-2xl font-semibold text-kubi-black">
-            O significado da nossa logo
-          </h2>
-          <p className="mt-4 text-kubi-black/85">
-            O símbolo da Kubi nasce da observação atenta de Brasília: as Asas do Plano
-            Piloto, a Catedral Metropolitana, a Bandeira do Distrito Federal e as
-            icônicas &ldquo;tesourinhas&rdquo; — os cruzamentos viários que são marca
-            registrada da cidade — se encontram em uma composição única, em forma de
-            cubo, que carrega o brilho de um ponto central: a atenção exclusiva que
-            dedicamos a cada cliente.
-          </p>
+        <section className="mt-12 flex flex-col items-start gap-8 sm:flex-row sm:items-center">
+          <Image
+            src="/brand/kubi-logo-stack-black.png"
+            alt="Símbolo da Kubi Imóveis"
+            width={131}
+            height={140}
+            className="h-auto w-auto shrink-0"
+          />
+          <div>
+            <h2 className="font-heading text-2xl font-semibold text-kubi-black">
+              O significado da nossa logo
+            </h2>
+            <p className="mt-4 text-kubi-black/85">
+              O símbolo da Kubi nasce da observação atenta de Brasília: as Asas do Plano
+              Piloto, a Catedral Metropolitana, a Bandeira do Distrito Federal e as
+              icônicas &ldquo;tesourinhas&rdquo; — os cruzamentos viários que são marca
+              registrada da cidade — se encontram em uma composição única, em forma de
+              cubo, que carrega o brilho de um ponto central: a atenção exclusiva que
+              dedicamos a cada cliente.
+            </p>
+          </div>
         </section>
 
         <section className="mt-12 border-t border-kubi-gray-200 pt-8 text-sm text-kubi-gray">

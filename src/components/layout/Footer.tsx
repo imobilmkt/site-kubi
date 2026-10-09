@@ -1,5 +1,5 @@
+import Image from "next/image";
 import Link from "next/link";
-import { Logo } from "@/components/brand/Logo";
 import { Container } from "@/components/ui/Container";
 import {
   contentLinks,
@@ -54,7 +54,13 @@ export async function Footer() {
     <footer className="bg-kubi-black text-kubi-white">
       <Container className="grid grid-cols-2 gap-10 py-14 sm:grid-cols-3 lg:grid-cols-5">
         <div className="col-span-2 sm:col-span-3 lg:col-span-1">
-          <Logo layout="stacked" tone="light" className="items-start text-left" />
+          <Image
+            src="/brand/kubi-logo-stack-white.png"
+            alt={`${siteConfig.name} — ${siteConfig.alternateName}`}
+            width={97}
+            height={104}
+            className="h-auto w-auto"
+          />
           <p className="mt-4 max-w-xs text-sm text-kubi-white/70">{siteConfig.description}</p>
           <div className="mt-5 flex gap-3">
             <a

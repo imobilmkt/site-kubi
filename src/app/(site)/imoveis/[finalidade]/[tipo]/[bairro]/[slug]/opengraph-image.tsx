@@ -1,3 +1,5 @@
+import { readFile } from "node:fs/promises";
+import path from "node:path";
 import { ImageResponse } from "next/og";
 import { getPropertyBySlug } from "@/lib/properties";
 import { getCoverPhoto } from "@/lib/properties/types";
@@ -13,6 +15,11 @@ export default async function Image({ params }: Props) {
   const { slug } = await params;
   const property = await getPropertyBySlug(slug);
   const cover = property ? getCoverPhoto(property) : undefined;
+
+  const logoBuffer = await readFile(
+    path.join(process.cwd(), "public/brand/kubi-logo-horizontal-white.png"),
+  );
+  const logoSrc = `data:image/png;base64,${logoBuffer.toString("base64")}`;
 
   return new ImageResponse(
     (
@@ -53,20 +60,7 @@ export default async function Image({ params }: Props) {
         />
 
         <div style={{ position: "relative", display: "flex", flexDirection: "column", padding: 64 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-            <span style={{ color: "#FF751F", fontSize: 30, fontWeight: 700 }}>Kubi</span>
-            <span
-              style={{
-                color: "#FF751F",
-                fontSize: 16,
-                fontWeight: 600,
-                letterSpacing: 4,
-                textTransform: "uppercase",
-              }}
-            >
-              Imóveis
-            </span>
-          </div>
+          <img src={logoSrc} alt="" width={208} height={60} style={{ objectFit: "contain" }} />
 
           {property && (
             <>

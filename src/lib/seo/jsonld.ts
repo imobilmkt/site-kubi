@@ -18,7 +18,7 @@ export function organizationJsonLd() {
     alternateName: siteConfig.alternateName,
     legalName: siteConfig.legalName,
     url: siteConfig.url,
-    logo: `${siteConfig.url}/icon`,
+    logo: `${siteConfig.url}/brand/kubi-logo-stack-black.png`,
     slogan: siteConfig.slogan,
     sameAs: [siteConfig.social.instagramUrl, siteConfig.social.googleBusinessUrl].filter(
       Boolean,

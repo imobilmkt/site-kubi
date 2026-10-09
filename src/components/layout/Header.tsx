@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
-import { Logo } from "@/components/brand/Logo";
 import { Container } from "@/components/ui/Container";
 import { mainNav } from "@/config/nav";
 import { buildWhatsappUrl, siteConfig } from "@/config/site";
@@ -20,7 +20,14 @@ export function Header() {
     <header className="sticky top-0 z-30 border-b border-kubi-gray-200 bg-kubi-white/95 backdrop-blur">
       <Container className="flex h-16 items-center justify-between sm:h-20">
         <Link href="/">
-          <Logo layout="horizontal" tone="dark" />
+          <Image
+            src="/brand/kubi-logo-horizontal-black.png"
+            alt={`${siteConfig.name} — ${siteConfig.alternateName}`}
+            width={145}
+            height={42}
+            priority
+            className="h-auto w-auto"
+          />
         </Link>
 
         <nav className="hidden items-center gap-7 lg:flex" aria-label="Principal">
