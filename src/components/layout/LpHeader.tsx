@@ -15,7 +15,7 @@ export function LpHeader() {
             width={145}
             height={42}
             priority
-            className="h-auto w-auto"
+            className="h-[42px] w-[145px]"
           />
         </Link>
       </Container>
