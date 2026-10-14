@@ -2,6 +2,7 @@ import { buildUrlsetXml, xmlResponse, type SitemapUrl } from "@/lib/seo/sitemap"
 import { getAllProperties } from "@/lib/properties";
 import { routablePurposes } from "@/lib/properties/types";
 import { servicePages } from "@/lib/content/service-pages";
+import { complementaryServices } from "@/lib/content/complementary-services";
 
 
 const STATIC_PAGES = [
@@ -14,6 +15,7 @@ const STATIC_PAGES = [
   "/bairros",
   "/blog",
   "/faq",
+  "/servicos",
   "/politica-de-privacidade",
   "/termos-de-uso",
   "/politica-de-cookies",
@@ -36,9 +38,15 @@ export async function GET() {
     }
   }
 
+  const servicePageSlugs = new Set(servicePages.map((s) => s.slug));
+  const newComplementaryServices = complementaryServices.filter(
+    (s) => !servicePageSlugs.has(s.slug),
+  );
+
   const urls: SitemapUrl[] = [
     ...STATIC_PAGES.map((loc) => ({ loc, changeFrequency: "weekly" as const })),
     ...servicePages.map((s) => ({ loc: `/${s.slug}`, changeFrequency: "monthly" as const })),
+    ...newComplementaryServices.map((s) => ({ loc: s.href, changeFrequency: "monthly" as const })),
     ...[...purposeSet, ...typeSet, ...leafSet].map((loc) => ({
       loc,
       changeFrequency: "daily" as const,

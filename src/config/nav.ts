@@ -9,6 +9,7 @@ export const serviceLinks = [
   { href: "/financiamento-imobiliario", label: "Financiamento imobiliário" },
   { href: "/consorcio-imobiliario", label: "Consórcio imobiliário" },
   { href: "/avaliacao-de-imovel", label: "Avaliação de imóvel" },
+  { href: "/servicos", label: "Serviços complementares" },
 ] as const;
 
 export const mainNav = [

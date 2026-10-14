@@ -2,21 +2,8 @@ import type { ServicePageDef } from "@/lib/content/service-pages";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { Faq } from "@/components/content/Faq";
-import { ContactForm } from "@/components/forms/ContactForm";
-import { CaptacaoForm } from "@/components/forms/CaptacaoForm";
-import { AvaliacaoForm } from "@/components/forms/AvaliacaoForm";
+import { ServiceWhatsappCta } from "@/components/content/ServiceWhatsappCta";
 import { testimonials } from "@/lib/content/testimonials";
-
-function ServiceForm({ def }: { def: ServicePageDef }) {
-  switch (def.formType) {
-    case "captacao":
-      return <CaptacaoForm />;
-    case "avaliacao":
-      return <AvaliacaoForm />;
-    default:
-      return <ContactForm formType={def.formType} title={def.formTitle} />;
-  }
-}
 
 export function ServicePageContent({ def }: { def: ServicePageDef }) {
   const proof = testimonials.slice(0, 2);
@@ -85,7 +72,7 @@ export function ServicePageContent({ def }: { def: ServicePageDef }) {
 
           <aside className="lg:sticky lg:top-24 lg:h-fit">
             <div className="rounded-card border border-kubi-gray-200 p-6">
-              <ServiceForm def={def} />
+              <ServiceWhatsappCta slug={def.slug} eyebrow={def.eyebrow} title={def.formTitle} />
             </div>
           </aside>
         </div>

@@ -1,6 +1,7 @@
 import { siteConfig } from "@/config/site";
 import { neighborhoods } from "@/lib/properties/neighborhoods";
 import { servicePages } from "@/lib/content/service-pages";
+import { complementaryServices } from "@/lib/content/complementary-services";
 
 
 /**
@@ -14,6 +15,12 @@ export async function GET() {
 
   const serviceLines = servicePages
     .map((s) => `- [${s.title}](${siteConfig.url}/${s.slug}): ${s.metaDescription}`)
+    .join("\n");
+
+  const servicePageSlugs = new Set(servicePages.map((s) => s.slug));
+  const complementaryServiceLines = complementaryServices
+    .filter((s) => !servicePageSlugs.has(s.slug))
+    .map((s) => `- [${s.title}](${siteConfig.url}${s.href}): ${s.description}`)
     .join("\n");
 
   const neighborhoodLines = neighborhoods
@@ -31,6 +38,8 @@ Contato: ${siteConfig.contact.phone} (telefone/WhatsApp), ${siteConfig.contact.e
 ## Serviços
 
 ${serviceLines}
+${complementaryServiceLines}
+- [Serviços complementares (visão geral)](${siteConfig.url}/servicos)
 
 ## Imóveis
 
