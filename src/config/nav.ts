@@ -1,6 +1,7 @@
 /** Estrutura de navegação centralizada — usada no header e no rodapé. */
 
 export const serviceLinks = [
+  { href: "/servicos", label: "Ver todos os serviços" },
   { href: "/comprar-imovel", label: "Comprar imóvel" },
   { href: "/alugar-imovel", label: "Alugar imóvel" },
   { href: "/anuncie-seu-imovel", label: "Anuncie seu imóvel" },
@@ -9,7 +10,6 @@ export const serviceLinks = [
   { href: "/financiamento-imobiliario", label: "Financiamento imobiliário" },
   { href: "/consorcio-imobiliario", label: "Consórcio imobiliário" },
   { href: "/avaliacao-de-imovel", label: "Avaliação de imóvel" },
-  { href: "/servicos", label: "Serviços complementares" },
 ] as const;
 
 export const mainNav = [

@@ -4,9 +4,9 @@ import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { ServicesHub } from "@/components/content/ServicesHub";
 
 export const metadata: Metadata = {
-  title: "Serviços",
+  title: "Todos os serviços",
   description:
-    "Conheça os serviços complementares da Kubi Imóveis em Brasília: arquitetura, serviços jurídicos, correspondente bancário, despachante, contratos, seguro, consórcio imobiliário, treinamento de vendas e avaliação de imóvel.",
+    "Todos os serviços da Kubi Imóveis em Brasília: comprar, alugar, anunciar, administração, intermediação, financiamento, consórcio e avaliação de imóvel, além de arquitetura, jurídico, correspondente bancário, despachante, contratos, seguro e treinamento de vendas.",
   alternates: { canonical: "/servicos" },
 };
 
@@ -16,13 +16,13 @@ export default function ServicosPage() {
       <Container>
         <Breadcrumbs items={[{ name: "Serviços", url: "/servicos" }]} />
         <h1 className="mt-4 font-heading text-3xl font-semibold text-kubi-black sm:text-4xl">
-          Serviços
+          Todos os serviços
         </h1>
         <p className="mt-3 max-w-2xl text-kubi-gray">
-          Além de comprar, vender e alugar imóveis, a Kubi conecta você a uma rede de
-          parceiros especializados para resolver tudo o que envolve o seu imóvel — do
-          projeto à documentação. Clique no ícone de um serviço para conhecer os detalhes,
-          ou fale direto com a nossa equipe pelo WhatsApp.
+          Da compra e venda à administração do imóvel, e de uma rede de parceiros
+          especializados para resolver tudo o que envolve o seu patrimônio — do projeto à
+          documentação. Clique no ícone de um serviço para conhecer os detalhes, ou fale
+          direto com a nossa equipe pelo WhatsApp.
         </p>
 
         <div className="mt-10">

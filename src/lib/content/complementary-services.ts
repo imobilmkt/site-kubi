@@ -7,7 +7,13 @@ export type ServiceIconName =
   | "shield-check"
   | "piggy-bank"
   | "presentation"
-  | "search";
+  | "search"
+  | "home"
+  | "key"
+  | "megaphone"
+  | "clipboard-list"
+  | "handshake"
+  | "calculator";
 
 export type ComplementaryService = {
   slug: string;
