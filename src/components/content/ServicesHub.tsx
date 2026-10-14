@@ -72,30 +72,14 @@ function ServiceCard({ service }: { service: ComplementaryService }) {
   );
 }
 
+const allServices: ComplementaryService[] = [...coreServices, ...extraServices];
+
 export function ServicesHub() {
   return (
-    <div className="space-y-16">
-      <div>
-        <h2 className="font-heading text-xl font-semibold text-kubi-black">
-          Comprar, vender e alugar
-        </h2>
-        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {coreServices.map((service) => (
-            <ServiceCard key={service.slug} service={service} />
-          ))}
-        </div>
-      </div>
-
-      <div>
-        <h2 className="font-heading text-xl font-semibold text-kubi-black">
-          Serviços complementares
-        </h2>
-        <div className="mt-6 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {extraServices.map((service) => (
-            <ServiceCard key={service.slug} service={service} />
-          ))}
-        </div>
-      </div>
+    <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+      {allServices.map((service) => (
+        <ServiceCard key={service.slug} service={service} />
+      ))}
     </div>
   );
 }

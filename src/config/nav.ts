@@ -10,6 +10,13 @@ export const serviceLinks = [
   { href: "/financiamento-imobiliario", label: "Financiamento imobiliário" },
   { href: "/consorcio-imobiliario", label: "Consórcio imobiliário" },
   { href: "/avaliacao-de-imovel", label: "Avaliação de imóvel" },
+  { href: "/arquitetura", label: "Arquitetura" },
+  { href: "/servicos-juridicos", label: "Serviços jurídicos" },
+  { href: "/correspondente-bancario", label: "Correspondente bancário" },
+  { href: "/despachante-imobiliario", label: "Despachante imobiliário" },
+  { href: "/contratos", label: "Contratos" },
+  { href: "/seguro", label: "Seguro" },
+  { href: "/treinamento-de-vendas", label: "Treinamento de vendas" },
 ] as const;
 
 export const mainNav = [
