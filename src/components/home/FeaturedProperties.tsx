@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { getFeaturedProperties } from "@/lib/properties";
 import { PropertyCard } from "@/components/properties/PropertyCard";
 import { Container } from "@/components/ui/Container";

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { getStoredConsent, updateConsent } from "@/lib/analytics/consent";
 
 /** Banner de cookies (LGPD). Enquanto não houver escolha, pixels de marketing e analytics ficam bloqueados (Consent Mode v2). */

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { Container } from "@/components/ui/Container";
 import { mainNav } from "@/config/nav";
 import { buildWhatsappUrl, siteConfig } from "@/config/site";

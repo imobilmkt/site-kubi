@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { Container } from "@/components/ui/Container";
 import { QuickSearchForm } from "@/components/home/QuickSearchForm";
 import { FeaturedProperties } from "@/components/home/FeaturedProperties";

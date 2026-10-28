@@ -76,7 +76,10 @@ export default function PoliticaDePrivacidadePage() {
             essenciais (analytics e publicidade), estes últimos carregados apenas após seu
             consentimento no banner de cookies, em conformidade com o Google Consent Mode
             v2. Veja detalhes na nossa{" "}
-            <a href="/politica-de-cookies">Política de Cookies</a>.
+            <a href="/politica-de-cookies" target="_blank" rel="noopener noreferrer">
+              Política de Cookies
+            </a>
+            .
           </p>
 
           <h2>5. Seus direitos como titular de dados</h2>
@@ -92,7 +95,10 @@ export default function PoliticaDePrivacidadePage() {
           </ul>
           <p>
             Para exercer esses direitos, entre em contato pelo e-mail{" "}
-            <a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a>.
+            <a href={`mailto:${siteConfig.contact.email}`} target="_blank" rel="noopener noreferrer">
+              {siteConfig.contact.email}
+            </a>
+            .
           </p>
 
           <h2>6. Retenção e segurança</h2>
@@ -112,8 +118,10 @@ export default function PoliticaDePrivacidadePage() {
           <h2>8. Contato</h2>
           <p>
             Dúvidas sobre esta política podem ser enviadas para{" "}
-            <a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a> ou
-            para o endereço {siteConfig.address.full}.
+            <a href={`mailto:${siteConfig.contact.email}`} target="_blank" rel="noopener noreferrer">
+              {siteConfig.contact.email}
+            </a>{" "}
+            ou para o endereço {siteConfig.address.full}.
           </p>
 
           <p className="mt-10 text-sm text-kubi-gray">

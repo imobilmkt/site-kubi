@@ -77,7 +77,10 @@ export default function TermosDeUsoPage() {
           <h2>9. Contato</h2>
           <p>
             Dúvidas sobre estes termos podem ser enviadas para{" "}
-            <a href={`mailto:${siteConfig.contact.email}`}>{siteConfig.contact.email}</a>.
+            <a href={`mailto:${siteConfig.contact.email}`} target="_blank" rel="noopener noreferrer">
+              {siteConfig.contact.email}
+            </a>
+            .
           </p>
 
           <p className="mt-10 text-sm text-kubi-gray">

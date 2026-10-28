@@ -20,7 +20,8 @@ export function OfficeMap() {
       map = L.map(containerRef.current, { center, zoom: 15, scrollWheelZoom: false });
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>',
         maxZoom: 19,
       }).addTo(map);
 

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { buildWhatsappUrl, siteConfig } from "@/config/site";
 import { trackWhatsappClick } from "@/lib/analytics/dataLayer";
 import {

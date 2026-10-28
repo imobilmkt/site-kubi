@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import type { Property } from "@/lib/properties/types";
 import { getCoverPhoto } from "@/lib/properties/types";
 import { getPropertyUrl } from "@/lib/properties/url";

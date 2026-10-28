@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import type { PostMeta } from "@/lib/blog/types";
 import { getCategoryLabel } from "@/lib/blog/categories";
 

@@ -39,7 +39,8 @@ export function PropertyMap({
       });
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-        attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+        attribution:
+          '&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a>',
         maxZoom: 19,
       }).addTo(map);
 
@@ -56,7 +57,7 @@ export function PropertyMap({
           alt: property.title,
         }).addTo(map);
         marker.bindPopup(
-          `<a href="${getPropertyUrl(property)}" style="font-weight:600;color:#000">${property.title}</a><br/>${getDisplayPrice(property)}`,
+          `<a href="${getPropertyUrl(property)}" target="_blank" rel="noopener noreferrer" style="font-weight:600;color:#000">${property.title}</a><br/>${getDisplayPrice(property)}`,
         );
         // Leaflet marca o ícone com role="button"/tabindex para navegação por
         // teclado, mas não define um nome acessível sozinho — completamos aqui.

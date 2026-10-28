@@ -91,7 +91,11 @@ export default function PoliticaDeCookiesPage() {
           <h2>Mais informações</h2>
           <p>
             Para entender como tratamos seus dados pessoais de forma mais ampla, consulte
-            nossa <a href="/politica-de-privacidade">Política de Privacidade</a>.
+            nossa{" "}
+            <a href="/politica-de-privacidade" target="_blank" rel="noopener noreferrer">
+              Política de Privacidade
+            </a>
+            .
           </p>
         </div>
       </Container>

@@ -1,6 +1,6 @@
 "use client";
 
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { useMemo, useState } from "react";
 import { formatBRL } from "@/lib/format";
 

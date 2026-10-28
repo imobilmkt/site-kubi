@@ -1,4 +1,4 @@
-import Link from "next/link";
+import Link from "@/components/ui/Link";
 import { Container } from "@/components/ui/Container";
 import { PostCard } from "@/components/content/PostCard";
 import { getAllPostsMeta } from "@/lib/blog/posts";

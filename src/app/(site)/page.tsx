@@ -2,6 +2,7 @@ import { Hero } from "@/components/home/Hero";
 import { FeaturedProperties } from "@/components/home/FeaturedProperties";
 import { NeighborhoodShowcase } from "@/components/home/NeighborhoodShowcase";
 import { ServicesGrid } from "@/components/home/ServicesGrid";
+import { HistorySection } from "@/components/home/HistorySection";
 import { SssSection } from "@/components/home/SssSection";
 import { StatsSection } from "@/components/home/StatsSection";
 import { TestimonialsSection } from "@/components/home/TestimonialsSection";
@@ -16,6 +17,7 @@ export default function Home() {
       <FeaturedProperties />
       <NeighborhoodShowcase />
       <ServicesGrid />
+      <HistorySection />
       <SssSection />
       <TestimonialsSection />
       <BlogPreviewSection />
