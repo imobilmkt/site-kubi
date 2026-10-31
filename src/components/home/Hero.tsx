@@ -1,6 +1,5 @@
 import Image from "next/image";
 import { siteConfig } from "@/config/site";
-import { QuickSearchForm } from "./QuickSearchForm";
 import heroImage from "../../../public/hero/memorial-jk.jpg";
 
 export function Hero() {
@@ -32,8 +31,6 @@ export function Hero() {
             de imóveis no Lago Sul, Lago Norte, Plano Piloto e principais regiões do DF.
           </p>
         </div>
-
-        <QuickSearchForm />
       </div>
     </section>
   );
