@@ -97,7 +97,8 @@ export async function Footer() {
             </p>
             <p>{siteConfig.address.full}</p>
             <p>
-              {siteConfig.contact.phone} · {siteConfig.contact.email} · CRECI-DF{" "}
+              Fale com o Dono: {siteConfig.contact.phone} · Avaliações:{" "}
+              {siteConfig.contact.avaliacoesPhone} · {siteConfig.contact.email} · CRECI-DF{" "}
               {siteConfig.creci}
             </p>
             <p>{siteConfig.businessHours.display}</p>

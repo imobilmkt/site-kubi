@@ -26,9 +26,9 @@ export const siteConfig = {
     city: "Brasília",
     state: "DF",
     stateFull: "Distrito Federal",
-    postalCode: "[CEP]",
+    postalCode: "71680-120",
     country: "BR",
-    full: "SMDB 12, Bloco G, salas 109, 110 e 111 – Lago Sul, Brasília/DF – CEP [CEP]",
+    full: "SMDB 12, Bloco G, salas 109, 110 e 111 – Lago Sul, Brasília/DF – CEP 71680-120",
   },
 
   geo: {
@@ -38,11 +38,14 @@ export const siteConfig = {
   },
 
   contact: {
-    phone: "[TELEFONE]",
-    phoneHref: "tel:+556100000000",
-    whatsapp: "[WHATSAPP]",
-    whatsappNumber: "556100000000", // [PREENCHER] somente dígitos, com DDI 55
-    email: "[EMAIL]",
+    phone: "(61) 99191-7557",
+    phoneHref: "tel:+5561991917557",
+    whatsapp: "(61) 99191-7557",
+    whatsappNumber: "5561991917557", // somente dígitos, com DDI 55
+    email: "atendimento@kubiimoveis.com",
+    // Linha dedicada da equipe de avaliações, exibida no rodapé.
+    avaliacoesPhone: "(61) 99288-2120",
+    avaliacoesPhoneHref: "tel:+5561992882120",
   },
 
   creci: "[CRECI]",
