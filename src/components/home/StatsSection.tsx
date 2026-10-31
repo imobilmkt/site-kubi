@@ -1,11 +1,10 @@
 import { Container } from "@/components/ui/Container";
 
-/** [PREENCHER] — substituir pelos números reais da Kubi antes do lançamento. */
 const stats = [
-  { value: "+[PREENCHER]", label: "Imóveis administrados" },
-  { value: "+[PREENCHER]", label: "Negócios fechados" },
-  { value: "[PREENCHER] anos", label: "De experiência no mercado de Brasília" },
-  { value: "[PREENCHER]", label: "Clientes satisfeitos" },
+  { value: "+150", label: "Imóveis administrados" },
+  { value: "+500", label: "Negócios fechados" },
+  { value: "+10 anos", label: "De experiência no mercado de Brasília" },
+  { value: "+500", label: "Clientes satisfeitos" },
 ];
 
 export function StatsSection() {
