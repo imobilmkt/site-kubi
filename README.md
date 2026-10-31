@@ -201,9 +201,7 @@ Além disso:
 
 ### Dados institucionais (`src/config/site.ts`)
 - Domínio (`domain`) — site hoje só publicado no domínio padrão da Vercel
-- Coordenadas exatas do escritório (`geo.latitude`/`geo.longitude`) — hoje é uma aproximação do Lago Sul
-
-~~Telefone, WhatsApp, e-mail, CRECI-DF, Instagram, horário de atendimento, endereço e link do Google Meu Negócio~~ — preenchidos.
+~~Telefone, WhatsApp, e-mail, CRECI-DF, Instagram, horário de atendimento, endereço, link do Google Meu Negócio e coordenadas exatas~~ — preenchidos.
 
 ### Equipe (`src/lib/content/team.ts`, `src/lib/properties/mock-data.ts`)
 - CRECI individual de cada diretora (Ingrid Eing, Cleia, Luana de Paula) e de cada corretor

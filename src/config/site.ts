@@ -32,9 +32,10 @@ export const siteConfig = {
   },
 
   geo: {
-    // [PREENCHER] coordenadas exatas do escritório (Lago Sul)
-    latitude: -15.8267,
-    longitude: -47.8788,
+    // Coordenadas exatas do escritório, extraídas do perfil "Kubi imóveis -
+    // Imobiliária Brasília" no Google Maps.
+    latitude: -15.8570032,
+    longitude: -47.8323332,
   },
 
   contact: {
