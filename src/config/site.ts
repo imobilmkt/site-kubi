@@ -48,7 +48,7 @@ export const siteConfig = {
     avaliacoesPhoneHref: "tel:+5561992882120",
   },
 
-  creci: "[CRECI]",
+  creci: "31.240",
 
   social: {
     instagram: "[@INSTAGRAM]",
