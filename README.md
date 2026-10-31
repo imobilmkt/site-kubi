@@ -200,20 +200,16 @@ Além disso:
 ## Lista completa de [PREENCHER]
 
 ### Dados institucionais (`src/config/site.ts`)
-- Domínio (`domain`)
-- CEP (`address.postalCode`, e dentro de `address.full`)
-- Telefone (`contact.phone`, `contact.phoneHref`)
-- WhatsApp (`contact.whatsapp`, `contact.whatsappNumber` — recalcular `phoneHref`/`whatsappNumber` com o número real)
-- E-mail (`contact.email`)
-- CRECI-DF pessoa jurídica (`creci`)
-- Instagram (`social.instagram`, `social.instagramUrl`)
+- Domínio (`domain`) — site hoje só publicado no domínio padrão da Vercel
 - Link do Google Meu Negócio / Google Maps (`social.googleBusinessUrl`)
-- Horário de atendimento (`businessHours.display` e `businessHours.spec`)
 - Coordenadas exatas do escritório (`geo.latitude`/`geo.longitude`) — hoje é uma aproximação do Lago Sul
+- Confirmar o texto completo do endereço (`address.streetAddress`) — o trecho recebido do cliente veio cortado ("t. de Mansões Dom Bosco Conj. 12 CL Salas 109, 110 e 111 - Lago Su")
+
+~~Telefone, WhatsApp, e-mail, CRECI-DF, Instagram e horário de atendimento~~ — preenchidos.
 
 ### Equipe (`src/lib/content/team.ts`, `src/lib/properties/mock-data.ts`)
-- CRECI individual de cada diretora e corretor
-- Nome, foto e biografia do 3º corretor (placeholder genérico)
+- CRECI individual de cada diretora (Ingrid Eing, Cleia, Luana de Paula) e de cada corretor
+- Nome, CRECI, foto e bio dos corretores reais da equipe (hoje são 3 nomes fictícios de exemplo: Rafael Moura, Beatriz Aquino e um terceiro em branco)
 - Fotos reais da equipe (hoje são fotos de banco de imagens)
 
 ### Depoimentos (`src/lib/content/testimonials.ts`)

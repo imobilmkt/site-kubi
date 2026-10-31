@@ -51,8 +51,8 @@ export const siteConfig = {
   creci: "31.240",
 
   social: {
-    instagram: "[@INSTAGRAM]",
-    instagramUrl: "https://www.instagram.com/[INSTAGRAM]",
+    instagram: "@kubiimoveis",
+    instagramUrl: "https://www.instagram.com/kubiimoveis/",
     googleBusinessUrl: "[PREENCHER google maps / google my business url]",
     facebookUrl: "",
     linkedinUrl: "",
@@ -60,14 +60,18 @@ export const siteConfig = {
   },
 
   businessHours: {
-    display: "[HORARIO]",
-    // Estrutura para schema.org OpeningHoursSpecification — ajustar quando o
-    // horário real for definido.
+    display: "Segunda a quinta: 8h às 18h · Sexta: 8h às 17h · Sábado: 9h às 13h · Domingo: fechado",
+    // Estrutura para schema.org OpeningHoursSpecification.
     spec: [
       {
-        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
-        opens: "09:00",
+        dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday"],
+        opens: "08:00",
         closes: "18:00",
+      },
+      {
+        dayOfWeek: ["Friday"],
+        opens: "08:00",
+        closes: "17:00",
       },
       {
         dayOfWeek: ["Saturday"],
