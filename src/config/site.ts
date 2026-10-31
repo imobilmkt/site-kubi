@@ -21,14 +21,14 @@ export const siteConfig = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kubiimoveis.com.br",
 
   address: {
-    streetAddress: "SMDB 12, Bloco G, salas 109, 110 e 111",
+    streetAddress: "St. de Mansões Dom Bosco, Conj. 12, CL, Salas 109, 110 e 111",
     neighborhood: "Lago Sul",
     city: "Brasília",
     state: "DF",
     stateFull: "Distrito Federal",
     postalCode: "71680-120",
     country: "BR",
-    full: "SMDB 12, Bloco G, salas 109, 110 e 111 – Lago Sul, Brasília/DF – CEP 71680-120",
+    full: "St. de Mansões Dom Bosco, Conj. 12, CL, Salas 109, 110 e 111 – Lago Sul, Brasília/DF – CEP 71680-120",
   },
 
   geo: {
@@ -53,7 +53,7 @@ export const siteConfig = {
   social: {
     instagram: "@kubiimoveis",
     instagramUrl: "https://www.instagram.com/kubiimoveis/",
-    googleBusinessUrl: "[PREENCHER google maps / google my business url]",
+    googleBusinessUrl: "https://share.google/Emv1bdIQyoofI6CIG",
     facebookUrl: "",
     linkedinUrl: "",
     youtubeUrl: "",

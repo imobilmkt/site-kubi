@@ -201,11 +201,9 @@ Além disso:
 
 ### Dados institucionais (`src/config/site.ts`)
 - Domínio (`domain`) — site hoje só publicado no domínio padrão da Vercel
-- Link do Google Meu Negócio / Google Maps (`social.googleBusinessUrl`)
 - Coordenadas exatas do escritório (`geo.latitude`/`geo.longitude`) — hoje é uma aproximação do Lago Sul
-- Confirmar o texto completo do endereço (`address.streetAddress`) — o trecho recebido do cliente veio cortado ("t. de Mansões Dom Bosco Conj. 12 CL Salas 109, 110 e 111 - Lago Su")
 
-~~Telefone, WhatsApp, e-mail, CRECI-DF, Instagram e horário de atendimento~~ — preenchidos.
+~~Telefone, WhatsApp, e-mail, CRECI-DF, Instagram, horário de atendimento, endereço e link do Google Meu Negócio~~ — preenchidos.
 
 ### Equipe (`src/lib/content/team.ts`, `src/lib/properties/mock-data.ts`)
 - CRECI individual de cada diretora (Ingrid Eing, Cleia, Luana de Paula) e de cada corretor
