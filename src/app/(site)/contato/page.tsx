@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Container } from "@/components/ui/Container";
 import { Breadcrumbs } from "@/components/seo/Breadcrumbs";
 import { ContactForm } from "@/components/forms/ContactForm";
-import { OfficeMapLoader } from "@/components/content/OfficeMapLoader";
+import { OfficeMap } from "@/components/content/OfficeMap";
 import { siteConfig } from "@/config/site";
 
 export const metadata: Metadata = {
@@ -65,7 +65,7 @@ export default function ContatoPage() {
               <p className="mt-2 text-sm text-kubi-black/85">{siteConfig.businessHours.display}</p>
             </div>
 
-            <OfficeMapLoader />
+            <OfficeMap />
           </div>
 
           <div className="lg:col-span-2">
